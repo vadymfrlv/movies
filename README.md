@@ -57,16 +57,14 @@ usage https://connections-api.herokuapp.com/docs/#/
 
 ## Tech Stack 🛠
 
-The Phonebook application is built using the following technologies:
+The Movie application is built using the following technologies:
 
 - React
 - React Router DOM
-- React-Redux
-- Redux Toolkit
-- Redux Persist
+- Axios
 - Formik
-- Yup
-- MUI Material
+- Prop Types
+- React Loader Spinner
 - Styled Components
 - Styled System
 
