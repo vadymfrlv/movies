@@ -6,7 +6,7 @@ import stateMachine from 'utils/stateMachine';
 import { Box } from 'components/Box/Box';
 import { Loader } from 'components/Loader/Loader';
 import { Notification } from 'components/Notification/Notification';
-import { MoviesList } from '../../components/MoviesList/MoviesList';
+import { MoviesList } from 'components/MoviesList/MoviesList';
 
 const Home = () => {
   const [movies, setMovies] = useState([]);
