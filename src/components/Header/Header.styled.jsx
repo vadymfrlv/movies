@@ -5,24 +5,27 @@ export const StyledHeader = styled.header`
   position: fixed;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 60px;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 60px;
-  background-color: #1900ff;
-  border-bottom: 6px solid #e7fc00;
 
-  z-index: 1;
-  width: 100%;
+  background-color: ${p => p.theme.colors.main};
+  border-bottom: ${p => p.theme.borders.headerFooter};
+
+  z-index: ${p => p.theme.zIndices[1]};
 `;
 
 export const StyledNavLink = styled(NavLink)`
-  font-weight: 900;
-  font-size: 30px;
-  letter-spacing: 0.1em;
+  font-weight: ${p => p.theme.fontWeights.black};
+  font-size: ${p => p.theme.fontSizes[6]}px;
+  letter-spacing: ${p => p.theme.letterSpacings.normal};
   text-transform: uppercase;
   text-decoration: none;
-  color: #e7fc00;
+
+  color: ${p => p.theme.colors.accent};
 
   &:not(:last-child) {
     margin-right: 100px;
@@ -30,12 +33,10 @@ export const StyledNavLink = styled(NavLink)`
 
   &:hover:not(.active),
   &.focus:not(.active) {
-    text-shadow: 0 0 3px #91ff00, 0 0 8px #91ff00, 0 0 13px #91ff00, 0 0 17px #91ff00,
-      0 0 22px #91ff00, 0 0 27px #91ff00, 0 0 32px #91ff00;
+    text-shadow: ${p => p.theme.shadows.navLink};
   }
 
   &.active {
-    text-shadow: 0 0 3px #91ff00, 0 0 8px #91ff00, 0 0 13px #91ff00, 0 0 17px #91ff00,
-      0 0 22px #91ff00, 0 0 27px #91ff00, 0 0 32px #91ff00;
+    text-shadow: ${p => p.theme.shadows.navLink};
   }
 `;

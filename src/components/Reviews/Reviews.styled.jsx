@@ -1,24 +1,26 @@
 import styled from 'styled-components';
 
 export const ReviewsList = styled.ul`
-  color: #fff;
+  color: ${p => p.theme.colors.white};
 `;
 
 export const ReviewsItem = styled.li`
   margin-bottom: 30px;
 
   &:not(:last-child) {
-    border-bottom: 2px dashed #fff;
+    border-bottom: ${p => p.theme.borders.decorative};
   }
 `;
 
 export const Author = styled.p`
   margin-bottom: 10px;
-  font-weight: 600;
+
+  font-weight: ${p => p.theme.fontWeights.medium};
 `;
 
 export const Content = styled.p`
   margin-bottom: 30px;
-  font-size: 16px;
-  line-height: 1.3;
+
+  font-size: ${p => p.theme.fontSizes[2]}px;
+  line-height: ${p => p.theme.lineHeights.body};
 `;

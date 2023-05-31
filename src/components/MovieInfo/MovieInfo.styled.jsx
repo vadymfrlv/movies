@@ -5,14 +5,17 @@ import { Box } from 'components/Box/Box';
 export const InfoContainer = styled(Box)`
   display: flex;
   margin-bottom: 30px;
-  color: #fff;
+
+  color: ${p => p.theme.colors.white};
 `;
 
 export const Poster = styled.img`
-  margin-right: 30px;
-  border-radius: 4px;
   width: 300px;
   height: 100%;
+
+  margin-right: 30px;
+
+  border-radius: ${p => p.theme.radii.poster};
 `;
 
 export const Info = styled(Box)`
@@ -22,8 +25,9 @@ export const Info = styled(Box)`
 
 export const Title = styled.h2`
   position: absolute;
-  font-weight: 900;
-  font-size: 25px;
+
+  font-weight: ${p => p.theme.fontWeights.black};
+  font-size: ${p => p.theme.fontSizes[5]}px;
   text-transform: uppercase;
 `;
 
@@ -32,32 +36,36 @@ export const Year = styled.span`
 `;
 
 export const DescriptionContainer = styled(Box)`
-  margin-top: 32px;
   max-width: 900px;
+  margin-top: 32px;
 `;
 
 export const Score = styled.p`
   margin-bottom: 23px;
-  font-weight: 900;
-  font-size: 15px;
+
+  font-weight: ${p => p.theme.fontWeights.black};
+  font-size: ${p => p.theme.fontSizes[1]}px;
   text-transform: uppercase;
 `;
 
 export const Overview = styled.h3`
   margin-bottom: 5px;
-  font-weight: 900;
-  font-size: 15px;
+
+  font-weight: ${p => p.theme.fontWeights.black};
+  font-size: ${p => p.theme.fontSizes[1]}px;
   text-transform: uppercase;
 `;
 
 export const DescriptionTitle = styled.h3`
   margin-bottom: 5px;
-  font-weight: 900;
-  font-size: 15px;
+
+  font-weight: ${p => p.theme.fontWeights.black};
+  font-size: ${p => p.theme.fontSizes[1]}px;
   text-transform: uppercase;
 `;
 
 export const DescriptionText = styled.p`
   margin-bottom: 23px;
-  font-weight: 500;
+
+  font-weight: ${p => p.theme.fontWeights.semiMedium};
 `;

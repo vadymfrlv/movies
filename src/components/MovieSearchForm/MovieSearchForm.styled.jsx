@@ -3,12 +3,13 @@ import { Form, Field } from 'formik';
 
 export const StyledForm = styled(Form)`
   position: relative;
+  max-width: 600px;
+
   display: flex;
   align-items: center;
   margin: 30px auto 0;
-  width: 100%;
-  max-width: 600px;
-  border-radius: 4px;
+
+  border-radius: ${p => p.theme.radii.btn};
   overflow: hidden;
 `;
 
@@ -18,26 +19,31 @@ export const StyledField = styled(Field)`
   height: 40px;
   padding-left: 8px;
   padding-right: 40px;
-  font-size: 20px;
-  font-weight: 600;
-  border: none;
-  border-radius: 4px;
+
+  font-weight: ${p => p.theme.fontWeights.medium};
+  font-size: ${p => p.theme.fontSizes[4]}px;
+
+  color: ${p => p.theme.colors.main};
+  border: ${p => p.theme.borders.none};
+  border-radius: ${p => p.theme.radii.btn};
   outline: none;
-  color: #1900ff;
-  background-color: #e7fc00;
+  background-color: ${p => p.theme.colors.accent};
 `;
 
 export const Button = styled.button`
   position: absolute;
   right: -5px;
-  display: block;
   width: 45px;
   height: 45px;
-  border: none;
+
+  display: block;
+
+  border: ${p => p.theme.borders.none};
   background-image: url('https://raw.githubusercontent.com/vadymfrlv/storage/fe9b6f252d7580e4be1db0339fc7a1314448d251/homeworks/searchY.svg');
   background-color: transparent;
   background-size: 50%;
   background-repeat: no-repeat;
   background-position: center;
+
   cursor: pointer;
 `;
