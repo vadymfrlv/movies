@@ -13,14 +13,14 @@ them to the popular movies page.
 
 The application includes the following routes:
 
-- / - Home component: The homepage displaying a list of popular movies.
-- /movies - Movies component: The movie search page where users can search for movies using
+- `/` - Home component: The homepage displaying a list of popular movies.
+- `/movies` - Movies component: The movie search page where users can search for movies using
   keywords.
-- /movies/:movieId - MovieDetails component: The page providing detailed information about a
+- `/movies/:movieId` - MovieDetails component: The page providing detailed information about a
   specific movie.
-- /movies/:movieId/cast - Cast component: Displays information about the cast of the movie. Rendered
-  on the MovieDetails page.
-- /movies/:movieId/reviews - Reviews component: Displays information about reviews of the movie.
+- `/movies/:movieId/cast` - Cast component: Displays information about the cast of the movie.
+  Rendered on the MovieDetails page.
+- `/movies/:movieId/reviews` - Reviews component: Displays information about reviews of the movie.
   Rendered on the MovieDetails page.
 
 ## Demo 🖥
