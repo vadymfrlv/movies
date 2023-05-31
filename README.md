@@ -1,30 +1,35 @@
 # MOVIES
 
-# DRAW - UNDER DEVELOPMENT
-
 ## Description 📑
 
-Phonebook is a web application that allows users to register, log in, and manage their contact list.
-After successful registration, the user is redirected to the contacts page, where they can add
-contacts using a form and view the list of existing contacts. Contact validation is performed using
-Yup, and if the input values are valid, a request is made to add the contact to the list. If there
-are no contacts in the list, the user sees a message indicating this. However, if there is at least
-one contact, the user sees a contact counter and a search form. When searching for contacts, the
-user is provided with information on how many contacts match the search query. If no contacts match
-the search query, the user sees a message indicating this.
+Movies is a web application where users can explore popular movies and view details about them. The
+application utilizes the themoviedb.org API to fetch movie data. It features navigation for popular
+movies as the home page and a search page to find movies based on keywords. Clicking on a movie
+poster leads to a detailed movie information page, which includes embedded routes to view the cast
+and read reviews of the selected movie. Additionally, the movie details page provides a back button
+that redirects the user to either the search page or the popular movies page, depending on the
+previous navigation path. If a user shares a link, clicking the back button will also redirect them
+to the popular movies page.
 
-The application consists of several pages:
+In the future, the application plans to expand its functionality, including the following features:
 
-- /signup - a public route for registering a new user with a form. This route is restricted, and if
-  the user is already logged in, they cannot access this route.
-- /signin - a public route for logging in an existing user with a form. This route is restricted,
-  and if the user is already logged in, they cannot access this route.
-- /contacts - a private route for managing the user's contact list. If the user is not logged in,
-  they cannot access this route and will be redirected to the /signin page.
+User registration and login Adding movies to favorites Movie trailers
+
+The application includes the following routes:
+
+- / - Home component: The homepage displaying a list of popular movies.
+- /movies - Movies component: The movie search page where users can search for movies using
+  keywords.
+- /movies/:movieId - MovieDetails component: The page providing detailed information about a
+  specific movie.
+- /movies/:movieId/cast - Cast component: Displays information about the cast of the movie. Rendered
+  on the MovieDetails page.
+- /movies/:movieId/reviews - Reviews component: Displays information about reviews of the movie.
+  Rendered on the MovieDetails page.
 
 ## Demo 🖥
 
-![Demo](https://raw.githubusercontent.com/vadymfrlv/storage/main/demos/phonebook/phonebook-demo.gif)
+![Demo](https://raw.githubusercontent.com/vadymfrlv/storage/main/demos/movies/movies-demo.gif)
 
 ## Installation ⚡️
 
@@ -39,21 +44,6 @@ terminal.
 Once all dependencies have been installed, you can start the development server by running the
 command <br> `npm start`. This will launch the project in your default browser and any changes you
 make to the code will automatically update in the browser.
-
-## Backend API ⚙️
-
-The application communicates with a backend server to perform various operations. The following API
-endpoints are used:
-
-User-related endpoints:
-
-POST /users/signup - Create a new user POST /users/login - Log in user POST /users/logout - Log out
-user GET /users/current - Get information about the current user Contact-related endpoints:
-
-GET /contacts - Get all user contacts POST /contacts - Create a new contact DELETE
-/contacts/{contactId} - Delete a contact PATCH /contacts/{contactId} - Update an existing contact
-Please refer to the backend documentation for detailed information on these endpoints and their
-usage https://connections-api.herokuapp.com/docs/#/
 
 ## Tech Stack 🛠
 
