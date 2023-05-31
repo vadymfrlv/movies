@@ -3,13 +3,13 @@
 ## Description 📑
 
 Movies is a web application where users can explore popular movies and view details about them. The
-application utilizes the <b>themoviedb.org API</b> to fetch movie data. It features navigation for
-popular movies as the home page and a search page to find movies based on keywords. Clicking on a
-movie poster leads to a detailed movie information page, which includes embedded routes to view the
-cast and read reviews of the selected movie. Additionally, the movie details page provides a back
-button that redirects the user to either the search page or the popular movies page, depending on
-the previous navigation path. If a user shares a link, clicking the back button will also redirect
-them to the popular movies page.
+application utilizes the [<b>`themoviedb.org API`</b>](https://www.themoviedb.org) to fetch movie
+data. It features navigation for popular movies as the home page and a search page to find movies
+based on keywords. Clicking on a movie poster leads to a detailed movie information page, which
+includes embedded routes to view the cast and read reviews of the selected movie. Additionally, the
+movie details page provides a back button that redirects the user to either the search page or the
+popular movies page, depending on the previous navigation path. If a user shares a link, clicking
+the back button will also redirect them to the popular movies page.
 
 The application includes the following routes:
 
