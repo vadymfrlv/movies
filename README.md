@@ -31,7 +31,7 @@ The application includes the following routes:
 
 To launch a project on GitHub, you first need to clone the project to your local machine. For
 instance, if you're working with a React project created using create-react-app, you can clone the
-project by running the command git clone https://github.com/username/project.git in your terminal.
+project by running the command git clone `https://github.com/vadymfrlv/movies.git` in your terminal.
 
 After the project has been cloned, you need to navigate to the project directory and install any
 dependencies that the project requires. You can do this by running the command `npm install` in your
