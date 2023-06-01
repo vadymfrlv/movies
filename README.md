@@ -58,6 +58,7 @@ The Movie application is built using the following technologies:
 
 In the future, the application plans to expand its functionality, including the following features:
 
+- Pagination 
 - User registration and login
 - Adding movies to favorites
 - Movie trailers
