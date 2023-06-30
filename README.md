@@ -30,15 +30,15 @@ The application includes the following routes:
 ## Installation ⚡️
 
 To launch a project on GitHub, you first need to clone the project to your local machine. For
-instance, if you're working with a React project created using create-react-app, you can clone the
-project by running the command git clone `https://github.com/vadymfrlv/movies.git` in your terminal.
+instance, you can clone the project by running the command git clone
+`https://github.com/vadymfrlv/movies.git` in your terminal.
 
 After the project has been cloned, you need to navigate to the project directory and install any
 dependencies that the project requires. You can do this by running the command `npm install` in your
 terminal.
 
 Once all dependencies have been installed, you can start the development server by running the
-command <br> `npm start`. This will launch the project in your default browser and any changes you
+command <br> `npm run dev`. This will launch the project in your default browser and any changes you
 make to the code will automatically update in the browser.
 
 ## Tech Stack 🛠
@@ -53,6 +53,7 @@ The Movie application is built using the following technologies:
 - React Loader Spinner
 - Styled Components
 - Styled System
+- Vite
 
 ## Future development 🚀
 
